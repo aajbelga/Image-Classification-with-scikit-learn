@@ -1,25 +1,24 @@
-# 🖼️ CIFAR-10 Image Classifier — HOG + SVM
+#  CIFAR-10 Image Classifier — HOG + SVM
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-orange?logo=scikit-learn)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Domain](https://img.shields.io/badge/Domain-Computer%20Vision-purple)
 
-A beginner-friendly **Computer Vision** project that classifies images from the CIFAR-10 dataset into 10 categories using **Histogram of Oriented Gradients (HOG)** feature extraction and a **Support Vector Machine (SVM)** classifier — all with scikit-learn.
 
----
 
-## 📌 What This Project Does
+
+##  What This Project Does
 
 Given any image, the model predicts which of these 10 categories it belongs to:
 
-| ✈️ Airplane | 🚗 Automobile | 🐦 Bird | 🐱 Cat | 🦌 Deer |
+|  Airplane |  Automobile |  Bird |  Cat |  Deer |
 |:-----------:|:-------------:|:-------:|:------:|:-------:|
-| 🐶 Dog | 🐸 Frog | 🐴 Horse | 🚢 Ship | 🚛 Truck |
+|  Dog |  Frog |  Horse |  Ship | Truck |
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 ```
 Raw Image (32×32 RGB)
@@ -41,7 +40,7 @@ Raw Image (32×32 RGB)
    SVM (RBF kernel)             ← Classification
         │
         ▼
-   Predicted Class 🎯
+   Predicted Class 
 ```
 
 ### Why HOG?
@@ -49,7 +48,7 @@ HOG (Histogram of Oriented Gradients) captures the **shape and edge structure** 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 image-classifier/
@@ -69,7 +68,7 @@ image-classifier/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the repository
 ```bash
@@ -101,7 +100,7 @@ python src/predict.py --image path/to/your/image.jpg
 
 ---
 
-## 📊 Results
+##  Results
 
 | Metric | Value |
 |--------|-------|
@@ -118,20 +117,10 @@ python src/predict.py --image path/to/your/image.jpg
 ### Per-Class F1-Score
 ![F1 Scores](results/per_class_accuracy.png)
 
----
-
-## 🔧 Experiment Ideas
-
-Want to improve accuracy? Try these:
-- ⚡ Increase `TRAIN_SAMPLES` in `train.py` to use all 50,000 images
-- 🔬 Tune HOG parameters: `orientations`, `pixels_per_cell`, `cells_per_block`
-- 🧪 Try different classifiers: `RandomForestClassifier`, `LogisticRegression`
-- 📐 Try different `PCA` component counts
-- 🎨 Add color histograms alongside HOG features
 
 ---
 
-## 📚 Concepts Covered
+##  Concepts Covered
 
 - Image preprocessing & feature extraction
 - Histogram of Oriented Gradients (HOG)
@@ -142,7 +131,7 @@ Want to improve accuracy? Try these:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Python 3.8+**
 - **scikit-learn** — ML pipeline, SVM, PCA
@@ -150,16 +139,3 @@ Want to improve accuracy? Try these:
 - **NumPy** — array operations
 - **Matplotlib** — visualizations
 - **Pillow** — image I/O
-
----
-
-## 📄 License
-
-MIT License — feel free to use, fork, and build on this project.
-
----
-
-## 🙌 Acknowledgements
-
-- Dataset: [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) by Alex Krizhevsky
-- HOG paper: Dalal & Triggs, CVPR 2005
